@@ -63,7 +63,9 @@
      <div>
     <section class="hero">
       <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-     <a href="" class="button">Заказать услугу</a>
+      <button data-modal-open class="button">Заказать услугу</button>
+ 
+
     </section>
   </div>
   
@@ -127,7 +129,7 @@
      <p>Product Designer</p>
 
      <ul class="personal-links">
-       <li>
+       <li class="link-item">
         <a  class="link-icon" href="" aria-label="Instagram" class="socset">
           <svg class="socset-icon">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -169,7 +171,7 @@
      <h3 lang="en" >Ольга Иванова</h3>
      <p>Frontend Developer</p>
      <ul class="personal-links">
-       <li>
+      <li class="link-item">
         <a  class="link-icon" href="" aria-label="Instagram" class="socset">
           <svg class="socset-icon">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -197,8 +199,6 @@
         </svg>
       </a>
       </li>
-      
-       
       </ul>
     </div>
 
@@ -211,36 +211,34 @@
      <h3 lang="en" >Андрей Шевченко</h3>
      <p>Marketing</p>
      <ul class="personal-links">
-      <li>
-       <a  class="link-icon" href="" aria-label="Instagram" class="socset">
-         <svg class="socset-icon">
-                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                   </svg>
-                 </a>
-     </li>
-      <li>
-       <a class="link-icon"   href="" aria-label="Twitter" class="socset">
-       <svg class="socset-icon">
-         <use href="./images/symbol-defs.svg#icon-twitter"></use>
-       </svg>
-     </a>
-     </li>
-      <li>
-       <a class="link-icon" href="" aria-label="Facebook" class="socset">
-         <svg class="socset-icon">
-                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                   </svg>
-                 </a>
-     </li>
-      <li>
-       <a class="link-icon" href="" aria-label="LinkedIn" class="socset">
-         <svg class="socset-icon">
-         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-       </svg>
-     </a>
-     </li>
-     
-      
+      <li class="link-item">
+        <a  class="link-icon" href="" aria-label="Instagram" class="socset">
+          <svg class="socset-icon">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+      </li>
+       <li>
+        <a class="link-icon"   href="" aria-label="Twitter" class="socset">
+        <svg class="socset-icon">
+          <use href="./images/symbol-defs.svg#icon-twitter"></use>
+        </svg>
+      </a>
+      </li>
+       <li>
+        <a class="link-icon" href="" aria-label="Facebook" class="socset">
+          <svg class="socset-icon">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+      </li>
+       <li>
+        <a class="link-icon" href="" aria-label="LinkedIn" class="socset">
+          <svg class="socset-icon">
+          <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+      </li>
      </ul>
     </div>
     </li>
@@ -252,36 +250,34 @@
      <h3 lang="en" >Иван Николаев</h3>
      <p>UI Designer</p>
      <ul class="personal-links">
-      <li>
-       <a  class="link-icon" href="" aria-label="Instagram" class="socset">
-         <svg class="socset-icon">
-                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                   </svg>
-                 </a>
-     </li>
-      <li>
-       <a class="link-icon"   href="" aria-label="Twitter" class="socset">
-       <svg class="socset-icon">
-         <use href="./images/symbol-defs.svg#icon-twitter"></use>
-       </svg>
-     </a>
-     </li>
-      <li>
-       <a class="link-icon" href="" aria-label="Facebook" class="socset">
-         <svg class="socset-icon">
-                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                   </svg>
-                 </a>
-     </li>
-      <li>
-       <a class="link-icon" href="" aria-label="LinkedIn" class="socset">
-         <svg class="socset-icon">
-         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-       </svg>
-     </a>
-     </li>
-     
-      
+      <li class="link-item">
+        <a  class="link-icon" href="" aria-label="Instagram" class="socset">
+          <svg class="socset-icon">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+      </li>
+       <li>
+        <a class="link-icon"   href="" aria-label="Twitter" class="socset">
+        <svg class="socset-icon">
+          <use href="./images/symbol-defs.svg#icon-twitter"></use>
+        </svg>
+      </a>
+      </li>
+       <li>
+        <a class="link-icon" href="" aria-label="Facebook" class="socset">
+          <svg class="socset-icon">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+      </li>
+       <li>
+        <a class="link-icon" href="" aria-label="LinkedIn" class="socset">
+          <svg class="socset-icon">
+          <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+      </li>
      </ul>
     </div>
     </li>
@@ -416,6 +412,85 @@
 
   </footer>
 
+      
+<!-- разметка модального окна -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <b >
+      Оставьте свои данные, мы вам перезвоним
+    </b>
+    <button class="close" data-modal-close>
+      <svg class="close-icon" width=11px height=11px;>
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+ 
+   
+  <form class="form js-speaker-form">
+    <div class="form-field">
+      <label for="name">Имя</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Иван Иваныч"
+        autofocus
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="tel">Телефон</label>
+      <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+    </div>
+
+    <div class="form-field">
+      <label for="mail">Почта</label>
+      <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+    </div>
+
+   
+
+    <div class="form-field">
+      <label for="comment">Комментарий</label>
+      <textarea
+        class="comment"
+        name="comment"
+        id="comment"
+        placeholder="Комментарий"
+      ></textarea>
+    </div>
+
+    
+
+    <div class="form-field">
+      <input type="checkbox" name="policy" id="policy" />
+      <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+    </div>
+
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+</div>
+
+  <script>
+    (() => {
+      document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+
+          e.currentTarget.reset();
+        });
+    })();
+  </script>
+ 
+
+<script src="./js/modal.js"></script>
 
   </body>
 </html>
