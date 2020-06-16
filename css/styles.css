@@ -140,7 +140,7 @@ padding-right: 50px;
      font-size: 14px;
      line-height: 1.14;
 
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
          }
 .site-nav .link:hover {color: var(--accent-color);}
@@ -171,32 +171,34 @@ border-radius: 2px;
 }
 
 .auth-nav{
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-    padding: 32px 50px;
+     display: flex;
+     align-items: center;
+     vertical-align: center;
+     padding: 32px 50px;
 
 
-    color: var(--title-text-color);
-    letter-spacing: 0.02em;
+     color: var(--title-text-color);
+     letter-spacing: 0.02em;
      font-weight: 500;
      font-size: 14px;
      line-height: 1.14;
      
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 
      }
 
+.auth-nav-item{
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}     
+
      
-.auth-nav :hover {
-    --color5: var(--accent-color);       
+.auth-nav-item:hover {
+    fill: var(--accent-color);       
     color: var(--accent-color);   
                         
 }
 
 .auth-nav :focus {
-    --color5: var(--accent-color);       
+    fill: var(--accent-color);       
     color: var(--accent-color);   
                         
 }
@@ -298,7 +300,7 @@ border-radius: 2px;
         text-align: center;
         border-width: 0px;
 
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
             
@@ -570,14 +572,14 @@ padding: 32px 15px 0px 15px;
     
     background-color: var(--accent-color);
     border-radius: 50%;
-    --color3: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
 .link-icon:focus {
     
     background-color: var(--accent-color);
     border-radius: 50%;
-    --color3: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
 .link-icon:nth-child(4) {
@@ -592,14 +594,25 @@ padding: 32px 15px 0px 15px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-  }
+}
 
-
-
+.socset-icon{
+    fill: var(--primary-text-color);
+}
 
 .link-icon svg {
     width: 20px;
     height: 20px;
+    fill: #AFB1B8;
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    
+}
+
+.link-icon svg:hover {
+   fill: var(--primary-text-color)
+    
 }
 
 
@@ -630,13 +643,14 @@ padding: 32px 15px 0px 15px;
         justify-content: center;
         text-align: center;
         padding: 20px;
+        fill: #AFB1B8;
         
 
         border: 1px solid #AFB1B8;
         border-radius: 4px;
 
          
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
@@ -647,7 +661,7 @@ padding: 32px 15px 0px 15px;
     }
 
     .client:hover, :focus {
-        --color3: var(--accent-color);
+        fill: var(--accent-color);
         width: 170px;
         height: 90px;
         
@@ -718,7 +732,7 @@ flex-wrap: wrap;
     margin-right: 30px;
     margin-bottom: 30px;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -781,7 +795,7 @@ position: absolute;
     width: 370px;
     opacity: 0;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     transform: translateY(+100%);
 
@@ -873,7 +887,7 @@ text-transform: uppercase;
     
     --color3: var(--primary-text-color);
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
