@@ -164,7 +164,7 @@ padding-right: 50px;
     position: absolute;
     display: inline-block;
     content: "";
-    bottom: -32px;
+    bottom: -31.5px;
     left: 50%;
     transform: translateX(-50%);
     margin-left: auto;
