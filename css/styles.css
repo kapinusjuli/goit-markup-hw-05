@@ -557,7 +557,7 @@ padding: 32px 15px 0px 15px;
     
     color: #AFB1B8;
 
-    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 
 }
@@ -568,18 +568,24 @@ padding: 32px 15px 0px 15px;
 .personal-links:focus{color: var(--accent-color);}
 
 .link-item {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-icon {
    
     margin-bottom: 0px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
     padding: 12px;
 
-    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
@@ -619,7 +625,7 @@ padding: 32px 15px 0px 15px;
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 
     
     
@@ -666,7 +672,7 @@ padding: 32px 15px 0px 15px;
         border-radius: 4px;
 
          
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
@@ -676,7 +682,7 @@ padding: 32px 15px 0px 15px;
         
     }
 
-    .client:hover, :focus {
+    .client:hover:focus {
         fill: var(--accent-color);
         width: 170px;
         height: 90px;
